@@ -1,0 +1,247 @@
+/**************************************************************
+ * Global
+ **************************************************************/
+
+@font-face {
+  font-family: "Lilita One", sans-serif;
+  src: url('LilitaOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "Lilita One", sans-serif;
+  background: #0e0613 none repeat scroll 0% 0%;
+  background-repeat: repeat;
+  background-image: url('../images/background.png');
+}
+
+html,
+body {
+  height: 100%;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Walibi';
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #8dcbed;
+  transition: all 0.25s ease-in;
+}
+
+a:hover {
+  color: #5da9d3;
+}
+
+/**************************************************************
+ * Page (container)
+ **************************************************************/
+
+.page {
+  max-width: 650px;
+
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  min-height: 100%;
+}
+
+.page::after {
+  display: block;
+  content: '';
+  padding-bottom: 100px;
+}
+
+/**************************************************************
+ * Banner
+ **************************************************************/
+
+.page-header {
+  display: table;
+  padding: 24px 0px 12px;
+  width: 100%;
+}
+
+.logo-div {
+  text-align: center;
+}
+
+.logo {
+  max-width: 70%;
+  height: auto;
+}
+
+.trailer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.links {
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.links ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
+.link {
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 25pt;
+
+  padding: 0.2rem 0.15rem 0.5rem;
+  
+  text-transform: uppercase;
+  text-align: center;
+
+  transition: all 0.2s ease-out;
+}
+
+.link:hover {
+  color: white;
+  transform: scale(1.1) translateY(-1px);
+}
+
+.link-icon {
+  width: 26px;
+  margin-right: 6px;
+}
+
+.link-steam {
+  background-image: url('../images/btn01.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.link-eshop {
+  background-image: url('../images/btn02.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.link-discord {
+  background-image: url('../images/btn05.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.link-ios .link-icon {
+  position: relative;
+  top: -1px;
+}
+
+.link-ios {
+  background-image: url('../images/btn06.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.link-android {
+  background-image: url('../images/btn04.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.link-xbox {
+  background-image: url('../images/btn04.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.link-ps5 {
+  background-image: url('../images/btn04.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.link-editor {
+  background-image: url('../images/btn07.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.screenshots a {
+  display: block;
+  width: 40%;
+  margin: 5px 5px 5px 5px;
+
+  transition: all 0.2s ease-out;
+}
+
+.screenshots a:hover {
+  transform: scale(1.1);
+}
+
+.screenshots img {
+  width: 100%;
+}
+
+.heroes {
+  padding-top: 48px;
+  text-align: center;
+}
+
+.heroes img {
+  width: 40%;
+}
+
+/**************************************************************
+ * Footer
+ **************************************************************/
+
+.page-footer {
+  /* Page's bottom */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 50px;
+  box-sizing: border-box;
+
+  /* Text style */
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+.page-footer p {
+  text-align: center;
+}
