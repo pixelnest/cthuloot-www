@@ -2,17 +2,24 @@
  * Global
  **************************************************************/
 
-@font-face {
+ @font-face {
   font-family: "Lilita One", sans-serif;
-  src: url('LilitaOne-Regular.ttf');
+  src: url('fonts/LilitaOne-Regular.ttf');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Passion One";
+  src: url('fonts/PassionOne-Bold.ttf');
+  font-weight: bold;
   font-style: normal;
 }
 
 html {
   font-family: "Lilita One", sans-serif;
   background: #0e0613 none repeat scroll 0% 0%;
-  background-repeat: repeat;
+  background-size: 100% auto;
   background-image: url('../images/background.png');
 }
 
@@ -20,15 +27,18 @@ html,
 body {
   height: 100%;
   color: #ffffff;
+  font-size: 15pt;  
 }
 
 h1 {
   text-align: center;
+  font-size: 70pt;
+  margin: 0;
 }
 
 h1,
 h2 {
-  font-family: 'Walibi';
+  font-family: 'Passion One';
   text-transform: uppercase;
 }
 
@@ -42,12 +52,16 @@ a:hover {
   color: #5da9d3;
 }
 
+ul {
+  line-height: 2em;
+}
+
 /**************************************************************
  * Page (container)
  **************************************************************/
 
 .page {
-  max-width: 650px;
+  max-width: 720px;
 
   padding: 0 20px;
   margin-left: auto;
@@ -116,11 +130,14 @@ a:hover {
 .link {
   color: #ffffff;
 
+  font-size: 12pt;
+  font-weight: bold;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 150px;
+  width: 200px;
   height: 25pt;
 
   padding: 0.2rem 0.15rem 0.5rem;
@@ -142,7 +159,7 @@ a:hover {
 }
 
 .link-steam {
-  background-image: url('../images/btn01.png');
+  background-image: url('../images/btn06.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -152,7 +169,7 @@ a:hover {
   background-size: 100% 100%;
 }
 .link-discord {
-  background-image: url('../images/btn05.png');
+  background-image: url('../images/btn04.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -175,13 +192,13 @@ a:hover {
 }
 
 .link-xbox {
-  background-image: url('../images/btn04.png');
+  background-image: url('../images/btn05.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .link-ps5 {
-  background-image: url('../images/btn04.png');
+  background-image: url('../images/btn01.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -221,6 +238,30 @@ a:hover {
 
 .heroes img {
   width: 40%;
+}
+
+.giftrailer {
+  display: block;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Passion One';
+  text-transform: uppercase;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.ksp {
+  font-family: 'Passion One';
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.names {
+  font-family: 'Passion One';
+  font-size: 16pt;
 }
 
 /**************************************************************
