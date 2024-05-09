@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <title>Cthuloot - arcade coop mutliplayer game</title>
+
+    {% include meta.html %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <script src="/static/lib/tailwind_3.3.5.js"></script>
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/regular.min.css" />
+    <link rel="stylesheet" href="/static/lib/fontawesome/css/solid.min.css" />
+    <link rel="stylesheet" href="/static/css/site.css" />
+</head>
+
+<body class="bg f">
+
+    <nav class="bg-gray-950 border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-6">
+            <a href="https://cthuloot.games/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="f text-white text-bold text-6xl">CTHULOOT</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                    <!-- <li>
+                        <a href="#play"
+                            class="block py-2 px-3 text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            Play
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="https://presskit.cthuloot.games"
+                            class="block py-2 px-3 text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            Presskit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pixelnest.io/"
+                            class="block py-2 px-3 text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            More games
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/7jFZ2fC"
+                            class="block py-2 px-3 text-2xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            <div class="flex flex-row space-x-2">
+                                <img class="flex w-8" src="/static/images/site/discord.png" alt="Discord">
+                                <span class="flex">Discord</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{ content }}
+</body>
+
+</html>
