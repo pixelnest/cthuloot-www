@@ -1,4 +1,4 @@
-# Cthuloot's website
+# CTHULOOT's website
 
 Website: [https://cthuloot.games](https://cthuloot.games)
 
